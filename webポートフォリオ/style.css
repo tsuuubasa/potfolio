@@ -1,0 +1,678 @@
+@charset"UTF-8";
+
+::-webkit-scrollbar	{display: none;
+			 -webkit-appearance: none}
+
+body	{margin: 0;
+	 font-family:'Tahoma',Gothic}
+
+h2	{font-family: 'Bitter', serif;}
+
+/*タイトル*/
+.toping		{max-width: 100%;
+ 		 height: auto;
+  		 margin-left: auto;
+		 margin-right: auto;
+		 vertical-align: bottom}
+
+/*ボックスの設定*/
+.box2		{background-color: #FBFBFB}
+
+.box2-1,.box2-2,.box2-3,.box2-4		{width: 480px;
+					 height: 280px;
+					 margin-left: auto;
+					 margin-right: auto}
+
+.box3	{padding-top: 50px;
+	 background-color: #FDFDFD;
+	 clear: both}
+
+/*ボックス2内カテゴリー*/
+.mylogo img	{width: 450px;
+		 height: 260px}
+
+.bar img	{width:450px;
+		 height: 260px}
+
+.hobby img	{width:450px;
+		 height: 260px}
+
+.unfinished img {width:450px;
+		 height: 260px}
+
+/*mylogoカーソル合わせ*/
+.mylogo			{overflow: hidden;
+		 	 position: relative;}
+
+.mylogo .mask	{width: 100%;
+		 	 height: 100%;
+		 	 position: absolute;
+		 	 top: 0;
+		 	 left: 0;
+		 	 opacity: 0;	/* マスクを表示しない */
+		 	 background-color: rgba(0,0,0,0.4);
+		 	 -webkit-transition: all 0.6s ease;
+		 	 transition: all 0.6s ease}
+
+.mylogo:hover  .mask		{opacity: 1;	/* マスクを表示する */
+		     	 	 padding-left: 130px;	/* 右にずらす */}
+
+/*barカーソル合わせ*/
+.bar		{overflow: hidden;
+		 position: relative;}
+
+.bar .mask	{width: 100%;
+		 height: 100%;
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 opacity: 0;	/* マスクを表示しない */
+		 background-color: rgba(0,0,0,0.4);
+		 -webkit-transition: all 0.6s ease;
+		 transition: all 0.6s ease}
+
+.bar:hover  .mask		{opacity: 1;	/* マスクを表示する */
+		     	 	 padding-left: 90px;	/* 右にずらす */}
+
+/*hobbyカーソル合わせ*/
+.hobby		{overflow: hidden;
+		 position: relative;}
+
+.hobby .mask	{width: 100%;
+		 height: 100%;
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 opacity: 0;	/* マスクを表示しない */
+		 background-color: rgba(0,0,0,0.4);
+		 -webkit-transition: all 0.6s ease;
+		 transition: all 0.6s ease}
+
+.hobby:hover  .mask		{opacity: 1;	/* マスクを表示する */
+		     	 	 padding-left: 140px;	/* 右にずらす */}
+
+/*unfinishedカーソル合わせ*/
+.unfinished		{overflow: hidden;
+		 	 position: relative;}
+
+
+.unfinished .mask	{width: 100%;
+		 	 height: 100%;
+		 	 position: absolute;
+		 	 top: 0;
+		 	 left: 0;
+		 	 opacity: 0;	/* マスクを表示しない */
+		 	 background-color: rgba(0,0,0,0.4);
+		 	 -webkit-transition: all 0.6s ease;
+		 	 transition: all 0.6s ease}
+
+.unfinished:hover  .mask		{opacity: 1;	/* マスクを表示する */
+		     	 	 	 padding-left: 120px;	/* 右にずらす */}
+
+/*全カーソル合わせ*/
+.caption		 {font-size: 200%;
+		 	  color: #fff;
+		 	  padding-top: 120px;
+			  padding-left: 30px}
+
+/*box2ボックスを重ねる設定*/
+.box2-1		{position: relative}
+
+.mylogo		{position: absolute}
+
+.box2-2		{position: relative}
+
+.bar		{position: absolute}
+
+.box2-3		{position: relative}
+
+.hobby		{position: absolute}
+
+.box2-4		{position: relative}
+
+.unfinished	{position: absolute}
+
+/*box3を重ねる設定*/
+.box3-1		{position: relative;}
+
+.me		{position: absolute;
+		 bottom: 0;
+   		 right: 150px;
+		 padding-top: 5px;
+		 width: 80px;
+		 height: 25px;
+		 border-radius: 5px 5px 0 0;
+		 text-align: center}
+
+.box3-2		{position: relative}
+
+.ig		{position: absolute;
+		 bottom: 0;
+ 		 right: 50px;
+		 padding-top: 5px;
+		 width: 80px;
+		 height: 25px;
+		 border-radius: 5px 5px 0 0;
+		 text-align: center}
+
+/*box3のボタン設定*/
+.me	{border-bottom: 0.1875em solid #C8C8C8;
+  	 color: #000000;
+  	 cursor: pointer;
+  	 transition: all 0.3s ease 0s;
+  	 background-color: #E6E6E6;
+  	 color: #303030}
+
+.me:hover	{border-bottom-color: transparent;
+  		 transform: translateY(0.1875em)}
+
+.ig	{border-bottom: 0.1875em solid #C8C8C8;
+  	 color: #000000;
+  	 cursor: pointer;
+  	 transition: all 0.3s ease 0s;
+  	 background-color: #E6E6E6;
+  	 color: #303030}
+
+.ig:hover	{border-bottom-color: transparent;
+  		 transform: translateY(0.1875em)}
+
+
+/*siteトップ*/
+.site h1	{margin-top: 100px;
+		 margin-left: 70px}
+
+.site img	{border: none}
+
+/*mylogoページ*/
+.boxB		{margin-top: 80px;
+		 margin-right: auto;
+		 margin-left: auto}
+
+
+.mylogopage	{height: auto;
+		 margin-bottom: 100px}
+
+.mylogopage p	{width: 440px;
+		 font-size: 15px}
+
+/*virtualthemeページ*/
+
+h4		{margin-bottom: 0}
+
+.theme 		{width: 800px;
+		 height: auto;
+		 padding-left: 35px;
+		 padding-right: 20px;
+		 margin-bottom: 100px;
+		 margin-top: 100px;
+		 margin-left: auto;
+		 margin-right:auto;
+		 border: solid 1px #303030}
+
+.theme p	{margin-top: 5px}
+
+/*完成画像*/
+.kansei img	{width: 350px;
+		 height: auto}
+
+.kansei 	{width: 300px;
+		 margin-left: auto;
+		 margin-right: auto;
+		 margin-bottom: 200px}
+
+/*解説*/
+.symbol		{margin-bottom: 30px;
+		 overflow: hidden}
+
+.symbol	img	{float: left;
+		 margin-right: 100px}
+
+.symbol p	{width: 650px;
+		 }
+
+.typo 		{clear: both;
+		 overflow: hidden;
+		 margin-bottom: 200px}
+
+.typo img	{width: 220px;
+		 height: auto;
+		 float: left;
+		 margin-right: 80px}
+
+.typo p		{width: 740px;
+		 padding-top: 20px}
+
+/*合成画像*/
+
+.gousei1,.gousei2	{width: 250px;
+		 	 height: auto}
+
+
+.simulation	{overflow: hidden;
+		 position: relative;
+		 width: 500px;
+		 height: 500px;
+		 margin-left: auto;
+		 margin-right: auto;
+		 margin-bottom: 50px}
+
+.gousei2	{position: absolute;
+	  	 top: 200px;
+		 right: 100px}
+
+.simulation p	{position: relative;
+		 font-size: 13px;
+		 width: 500px;
+		 top: 200px;
+		 left: 50px}
+
+/*バナー*/
+
+
+/*ホビー*/
+.sakuhin ul	{margin-left: auto;
+		 margin-right: auto}
+
+ ul 	{list-style-type: none;
+         width: 400px;
+         display: grid;
+         grid-gap: 1rem;
+         grid-template-columns: 2fr 1fr 1.5fr;
+         grid-template-rows: 300px 200px 250px 100px 250px}
+
+li	{font-size: 26px;
+         background-color: lightgray;
+         border: solid 1px black}
+        
+.la_1	{grid-row: 1 / span 2;
+	 background-image: url(yasuya.jpg);
+	 background-size: 100%}
+        
+.la_2	{grid-column: 2 / span 2;
+	 background-image: url(mori.jpg);
+	 background-size: cover}
+
+.la_3   {background-image: url(tukineko.jpg);
+	 background-size: cover}
+        
+.la_4	{background-image: url(denkyuu.jpg);
+	 background-size: cover}
+
+.la_5 	{grid-row: 3/ span 2; grid-column: 1 / span 2;
+	 background-image: url(kawa.jpg);
+	 background-size: cover}
+
+.la_6	{background-image: url(cop.jpg);
+	 background-size: cover}
+        
+.la_7	{grid-row: 4 / span 2;
+	 background-image: url(banana.jpg);
+	 background-size: cover}
+
+.la_8	{background-image: url(isihanabi.jpg);
+	 background-size: cover}
+
+.la_9	{background-image: url(momijikawa.jpg);
+	 background-size: cover}
+
+.sakuhin li a	{display: block}
+
+/*########## 320px以上～413px以下##########*/
+@media (min-width: 320px) and (max-width: 413px){
+
+.box2-1,.box2-2,.box2-3,.box2-4		{width: 300px;
+		 	 		 height: 170px}
+
+.mylogo img		{width: 300px;
+		 	 height: 170px}
+
+.bar img		{width: 300px;
+		 	 height: 170px}
+
+.hobby img		{width: 300px;
+		 	 height: 170px}
+
+.unfinished img		{width: 300px;
+		 	 height: 170px}
+
+.mylogo,.bar,.hobby,.unfinished 		{width: 300px;
+		 	 			 height: 170px}
+
+/*mylogopageのレスポンシブ*/
+.site h1	{margin-left: 20px}
+
+.mylogopage img		{width: 250px}
+
+.mylogopage p 		{width: 220px;
+			 font-size: 12px;
+			 margin-top: 40px;
+			 margin-left: 0}
+
+/*themeのレスポンシブ*/
+h2	{padding-left: 30px}
+
+.theme	{width: 250px;
+	 margin-left: auto;
+	 margin-right:auto}
+
+
+.theme p	{font-size: 14px}
+
+.kansei img	{width: 200px;
+		 height: auto;
+		 padding-left: 30px}
+
+
+
+.symbol img	{width: 100px;
+		 margin-left: 50px}
+
+.symbol p 	{width: 200px;
+		 font-size: 10px;
+		 clear: both;
+		 margin-left: 60px;
+		 padding-top: 10px}
+
+.typo img	{width: 100px;
+		 margin-left: 80px}
+
+.typo p 	{width: 200px;
+		 font-size: 10px;
+		 clear: both;
+		 margin-left: 60px;
+		 padding-top: 10px}
+
+.simulation img	{width: 300px}
+
+img.gousei1 	{width: 200px;
+		 padding-left: 25px}
+
+img.gousei2	{width: 200px;
+		 top: 150px;
+		 left: 100px}
+
+.simulation p	{left: 0px;
+		 font-size: 10px}
+
+.banner img	{width:250px}
+
+.banner p	{font-size: 12px}
+
+} 
+/*########## 414px以上～599px以下##########*/
+@media (min-width: 414px) and (max-width: 600px){
+
+/*ボックス2内レスポンシブ*/
+.box2-1,.box2-2,.box2-3,.box2-4		{width: 340px;
+		 	 		 height: 200px}
+
+.mylogo img		{width: 340px;
+		 	 height: 200px}
+
+.bar img		{width: 340px;
+		 	 height: 200px}
+
+.hobby img		{width: 340px;
+		 	 height: 200px}
+
+.unfinished img		{width: 340px;
+		 	 height: 200px}
+
+.mylogo,.bar,.hobby,.unfinished 		{width: 340px;
+		 	 			 height: 200px}
+
+/*カーソル合わせ*/
+.caption		 {font-size: 150%;
+		 	  color: #fff;
+		 	  padding-top: 90px;
+			  padding-left: 0px}
+
+/*mylogopageレスポンシブ*/
+h2		{margin-left: 30px}
+
+.mylogopage img		{width: 300px}
+
+.mylogopage p 		{width: 290px;
+			 margin-top: 50px;
+			 padding-right: 20px}
+
+/*themeのレスポンシブ*/
+h2	{padding-left: 60px}
+
+.theme	{width: 350px;
+	 margin-left: auto;
+	 margin-right:auto}
+
+
+.theme p	{font-size: 14px}
+
+.kansei img	{width: 300px;
+		 height: auto;
+		 padding-left: 30px}
+
+
+
+.symbol img	{width: 200px;
+		 margin-left: 50px}
+
+.symbol p 	{width: 300px;
+		 font-size: 12px;
+		 clear: both;
+		 margin-left: 60px;
+		 padding-top: 10px}
+
+.typo img	{width: 200px;
+		 margin-left: 80px}
+
+.typo p 	{width: 350px;
+		 font-size: 12px;
+		 clear: both;
+		 margin-left: 60px;
+		 padding-top: 10px}
+
+.simulation img	{width: 400px}
+
+img.gousei1 	{width: 250px;
+		 padding-left: 25px}
+
+img.gousei2	{width: 250px;
+		 top: 170px;
+		 left: 140px}
+
+.simulation p	{left: 0px;
+		 font-size: 10px}
+
+.banner		{width: 400px;
+		 margin-left: auto;
+		 margin-right: auto}
+
+.banner img	{width:250px}
+
+.banner p	{font-size: 12px;
+		 width: 400px}
+
+
+}
+
+/*########## 600px以上##########*/
+@media (min-width: 600px){
+.boxB	{width: 500px}
+
+.theme	{width: 480px}
+
+.banner img	{width: 400px}
+
+h2	{margin-left: 30px}
+}
+
+/*########## 718px以上##########*/
+@media (min-width: 718px){
+.boxB	{width: 600px}
+
+.theme	{width: 580px}
+
+ul	{width: 700px}
+
+}
+
+
+/*########## 999px以下##########*/
+@media (max-width: 999px){
+
+/*box2のスペース*/
+.box2-1		{margin-bottom: 30px;
+		 padding-top:30px}
+
+.box2-2		{padding-bottom: 30px}
+
+.box2-3		{margin-bottom: 30px}
+
+.box2-4		{padding-bottom: 30px}
+
+
+.mylogopage p	{margin-left: 10%;
+		 margin-right:10%}
+
+.mylogopage h2	{padding-left: 50px}
+
+/*ヴァーチャルテーマ*/
+
+
+
+
+}
+
+/*########## 1000px以上##########*/
+@media (min-width: 1000px){
+
+
+
+/*box2を横に並べる設定*/
+.box2:after	{content: "";
+		 display: block;
+ 	 	 clear: both}
+	
+.box2-1		{float: left;
+                width: 50%; 
+ 		height: 400px}	
+
+.box2-2		{float: left;
+		 width: 50%;
+                 height: 400px}
+
+.box2-3		{float: left;
+		 width: 50%;
+                 height: 400px}
+
+.box2-4		{float: left;
+		 width: 50%;
+                 height: 400px}
+
+/*box2カテゴリ内のスペース*/
+.mylogo		{bottom: 10%;
+    		 left: 50%;
+		 transform: translate(-50%,-10%);
+    		 -webkit-transform: translate(-50%,-10%);
+    		 -ms-transform: translateX(-50%,-10%)}
+
+.bar		{bottom: 10%;
+    		 left: 50%;
+   		 transform: translate(-50%,-10%);
+    		 -webkit-transform: translate(-50%,-10%);
+    		 -ms-transform: translateX(-50%,-10%)}
+
+.hobby		{bottom: 15%;
+    		 left: 50%;
+   		 transform: translate(-50%,-15%);
+    		 -webkit-transform: translate(-50%,-15%);
+    		 -ms-transform: translate(-50%,-15%)}
+
+.unfinished	{bottom: 15%;
+    		 left: 50%;
+   		 transform: translate(-50%,-15%);
+    		 -webkit-transform: translate(-50%,-15%);
+    		 -ms-transform: translate(-50%,-15%)}
+
+/*mylogoページ*/
+.boxB		{width: 800px}
+
+
+.mylogopage p	{width: 600px;
+		 font-size: 16px; 
+		 padding-left: 250px}
+
+
+
+/*box3スペース調整*/
+.box3		{padding-top: 50px}
+
+/*バナー*/
+/*重ねる設定*/
+.boxJ:after	{content:"";
+		 display: block;
+		 clear: both}
+
+.box5		{float: left;
+		 width: 50%;
+		 padding-right: 10px;
+		 -moz-box-sizing: border-box;
+		 -webkit-box-sizing: border-box;
+		 box-sizing: border-box}
+
+.box5 img	{max-width: 100%;
+		 height: 230px}
+
+.box5 p		{width: 300px;
+		 margin-left: auto;
+		 margin-right: auto}
+
+.box6		{float: left;
+		 width: 50%;
+		 padding-left: 10px;
+		 -moz-box-sizing: border-box;
+		 -webkit-box-sizing: border-box;
+		 box-sizing: border-box}
+
+.box6 img	{max-width: 100%;
+		 height: 230px}
+
+.box6 p		{width: 300px;
+		 margin-left: auto;
+		 margin-right: auto}
+
+.boxK:after	{content:"";
+		 display: block;
+		 clear: both}
+
+.box7		{float: left;
+		 width: 33.3333%}
+
+.box7 img	{max-width: 100%}
+
+.box8		{float: left;
+		 width: 33.3333%}
+
+.box8 img	{max-width: 100%}
+
+.box9		{float: left;
+		 width: 33.3333%}
+
+.box9 img	{max-width: 100%}
+
+
+.theme		{width: 800px}
+
+.banner		{width: 700px;
+		 margin-left: auto;
+		 margin-right: auto;
+		 margin-bottom: 50px}
+
+.banner h2	{margin-bottom: 50px}
+
+.banner p	{margin-bottom: 30px;
+		 font-size: 14px}
+
+
+ul	{width: 900px}
+
+}
